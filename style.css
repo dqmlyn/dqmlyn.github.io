@@ -50,6 +50,18 @@
 
 .navbar__item {
     height: 30px;
+    margin: ;
+}
+
+#social {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    opacity: 0;
 }
 
 .navbar__links {
@@ -126,6 +138,16 @@
         width: 100%;
     }
 
+    #social {
+        position: relative;
+        opacity: 1;
+    }
+
+    ol .navbar__item #social {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+    }
     .navbar__links {
         text-align: center;
         padding: 2rem;
