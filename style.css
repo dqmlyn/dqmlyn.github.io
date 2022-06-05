@@ -50,18 +50,6 @@
 
 .navbar__item {
     height: 30px;
-    margin: ;
-}
-
-#social {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    opacity: 0;
 }
 
 .navbar__links {
@@ -138,16 +126,6 @@
         width: 100%;
     }
 
-    #social {
-        position: relative;
-        opacity: 1;
-    }
-
-    ol .navbar__item #social {
-        display: grid;
-        align-items: center;
-        margin: 0 auto;
-    }
     .navbar__links {
         text-align: center;
         padding: 2rem;
@@ -181,6 +159,106 @@
 }
 
 /* hero section */
-.hero__section p {
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 75vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 100px;
+}
+
+.main__content {
     color: #ffffff;
+    font-size: 4rem;
+}
+
+.main__content #p6 {
+    font-size: 1rem;
+}
+
+.main__content #p7 {
+    color: #ff8243;
+}
+
+.main__content #p1, #p3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main__content #p2 {
+    font-size: 4rem;
+    background-color: #8d5524;
+    background-image: linear-gradient(to right, #8d5524 0%, #f1c27d 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content #p4, #p5 {
+    font-size: 2rem;
+    color: #4285F4;
+    position: relative;
+}
+
+.main__img--container {
+    justify-content: center;
+}
+#main__img {
+    float: right;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .main__content {
+        font-size: 2rem;
+    }
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
+    }
+
+    .main__content #p1 {
+        font-size: 0.5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__content {
+        font-size: 2rem;
+        text-align: right;
+    }
+    .main__content h1 {
+        font-size: 2rem;
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
+    }
+
+    .main__content #p1 {
+        font-size: 2rem;
+    }
+
+    .main__content #p2 {
+        font-size: 1.5rem;
+    }
+    .main__content #p3 #p4 {
+        font-size: 1rem;
+    }
 }
