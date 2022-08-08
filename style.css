@@ -224,7 +224,7 @@ footer {
     justify-content: center;
     height: 75px;
     position: relative;
-    margin: 30px;
+    margin: 40px;
 }
 
 @media screen and (max-width: 960px) {
